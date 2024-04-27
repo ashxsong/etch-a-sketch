@@ -13,7 +13,11 @@ let squares = document.querySelectorAll(".square");
 
 squares.forEach((square) => {
   square.addEventListener("mousemove", function (e) {
+    /*
     e.target.style.background = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    */
+    e.target.style.background = "black";
+    e.target.style.opacity = Number(e.target.style.opacity) + 0.1;
   });
 });
 
@@ -38,7 +42,11 @@ function newGrid(numSquares) {
   squares = document.querySelectorAll(".square");
   squares.forEach((square) => {
     square.addEventListener("mousemove", function (e) {
+      /*
       e.target.style.background = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+      */
+      e.target.style.background = "black";
+      e.target.style.opacity = Number(e.target.style.opacity) + 0.1;
     });
   });
 }
