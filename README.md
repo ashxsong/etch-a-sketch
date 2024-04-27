@@ -1,1 +1,5 @@
-# etch-a-sketch
+# Etch-a-Sketch
+
+This is an online version of Etch-a-Sketch. It begins with a 16x16 grid of squares. When the user's mouse hovers over a square, the square changes color. This leaves a trail of squares through the grid. Initially, the squares changed from white to black. Now, the squares change from white to a random color with each interaction. Each interaction also progressively darkens the squares by 10%. The user can click the "New Grid" button and change the number of squares per side for the new grid. The number must be an integer between 1 and 100.
+
+I used HTML to create the basic webpage and CSS (mostly flexbox) to center and style the grid. I mainly used JavaScript to create Etch-a-Sketch. I worked with the DOM to create a function that erases an old grid and creates a new grid. I added event listeners to enable the drawing feature of Etch-a-Sketch and the "New Grid" button to work.
